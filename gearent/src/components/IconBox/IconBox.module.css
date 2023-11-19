@@ -1,0 +1,47 @@
+.icon__box{
+    padding: 20px 25px;
+    position: relative;
+    overflow: hidden;
+    background: #EEF2E6;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+  
+.icon__box.icon__title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+  
+.icon__box.icon__title a {
+    transition: 0.3s;
+}
+
+.icon__box.icon {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    font-size: 48px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.6);
+}
+  
+.icon__box:hover {
+    background: #633B30;
+}
+  
+.icon__box:hover .icon__title a,
+.icon__box:hover .icon {
+    color: #fff;
+}
+
+.icon__anchor{
+    text-decoration: none;
+    color: #633B30;
+}

@@ -1,0 +1,39 @@
+.footer{
+    background-color: #8e3200;
+}
+
+.footer__anchor{
+    text-decoration: none;
+}
+
+.footer__title{
+    color: #ffffff;
+}
+
+.footer__dot{
+    color: #f96f59;
+}
+
+.footer__description{
+    color:  #ffffff;
+}
+
+.footer__subtitle{
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.footer__list a{
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 2.5rem;
+}
+
+.footer__list a:hover{
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer__copyright{
+    line-height: 1rem;
+}
