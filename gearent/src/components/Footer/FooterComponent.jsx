@@ -21,16 +21,16 @@ function FooterComponent() {
             <div className="col-md-3 mb-md-0 mb-3">
               <h5 className={styles.footer__subtitle}>Halaman Navigasi</h5>
               <ul className={`list-unstyled ${styles['footer__list']}`}>
-                <li><a href="#!">Beranda</a></li>
-                <li><a href="#!">Tentang Kami</a></li>
-                <li><a href="#!">Keunggulan</a></li>
-                <li><a href="#!">Daftar Toko</a></li>
-                <li><a href="#!">Kontak</a></li>
+                <li><a href="#hero">Beranda</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#services">Keunggulan</a></li>
+                <li><a href="#toko">Toko</a></li>
+                <li><a href="#contact">Kontak</a></li>
               </ul>
             </div>
             
             <div className="col-md-2 mb-md-0 mb-3">
-              <h5 className={styles.footer__subtitle}>Daftar Toko</h5>
+              <h5 className={styles.footer__subtitle}>Toko</h5>
               <ul className={`list-unstyled ${styles['footer__list']}`}>
                 <li><a href="#!">Tenda</a></li>
                 <li><a href="#!">Carrier</a></li>

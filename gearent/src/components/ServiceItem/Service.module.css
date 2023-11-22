@@ -1,0 +1,43 @@
+.service-item {
+    padding: 40px;
+    background: #fff;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid #633B30;
+}
+
+.service-item .icon{
+    width: 48px;
+    height: 48px;
+    position: relative;
+    margin-bottom: 50px;
+    color: #8E3200;
+    font-size: 56px;
+    transition: ease-in-out 0.3s;
+    z-index: 2;
+    position: relative;
+}
+
+.service-item .service__title{
+    color: #8E3200;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    padding-bottom: 8px;
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px solid #eeeeee;
+    transition: 0.3s;
+}
+
+.service__description{
+    line-height: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #8E3200;
+}
+
+.service-item:hover .service__title{
+    border-color: #8E3200;
+}

@@ -6,7 +6,7 @@ import imageEmpty from "../../assets/image/Empty.png";
 
 function HeroComponent() {
     return(
-        <section id="hero" className={`hero ${styles.hero}`}>
+        <div id="hero" className={`hero ${styles.hero}`}>
             <Container className="position-relative">
                 <Row className="gy-5" data-aos="fade-in">
                     <Col lg={6} order={2} className="order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
@@ -43,7 +43,7 @@ function HeroComponent() {
                 </Row>
             </Container>
             </div>
-      </section>
+      </div>
     );
 }
 

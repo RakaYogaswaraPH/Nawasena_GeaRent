@@ -1,0 +1,162 @@
+.contact{
+    padding: 60px 0 70px 0;
+    background-color: #ffffff;
+}
+
+.section__header{
+    padding-bottom: 20px;
+}
+  
+.contact__title{
+    padding: 30px 0;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #8E3200;
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+  
+.contact__title:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #8E3200;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.info__container{
+    background-color:#8E3200;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+}
+
+.info__item{
+    width: 100%;
+    background-color: #FFFADA;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #8E3200;
+}
+
+.info__item:hover{
+    width: 100%;
+    background-color: #9C6050;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #8E3200;
+}
+
+.info__item:last-child {
+    margin-bottom: 0;
+}
+
+.icon{
+    font-size: 20px;
+    color: #8E3200;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+
+.info__item:hover .icon {
+    color: #ffffff;
+}
+  
+
+.info__item .info__title{
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.info__item:hover .info__title{
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.info__description{
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.info__item:hover .info__description{
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 0 10px 10px 0;
+}
+
+.form .form__group{
+    padding-bottom: 8px;
+}
+
+.form .input, .form .textarea{
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.form .input[type=text], .form .input[type=email],
+.form .textarea{
+    padding: 12px 15px;
+}
+
+.form .input[type=text]:focus, .form .input[type=email]:focus,
+.form .textarea:focus{
+    border-color: #8E3200;
+}
+
+.form .textarea{
+    padding: 10px 12px;
+}
+
+.container__button{
+    padding-top: 30px;
+}
+
+.form .button[type="submit"]{
+    background: #8E3200;
+    border: 0;
+    padding: 14px 45px;
+    color: #ffffff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.form .button[type="submit"]:hover{
+    background: #FFFADA;
+    color: #8E3200;
+}
