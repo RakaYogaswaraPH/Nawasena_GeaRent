@@ -42,7 +42,7 @@ function FooterComponent() {
             <div className="col-md-3 mb-md-0 mb-3">
               <h5 className={styles.footer__subtitle}>Hubungi Kami</h5>
               <ul className={`list-unstyled ${styles['footer__list']}`}>
-                <li><a href="#!">Yogyakarta, Malioboro</a></li>
+                <li><a href="#!">Jakarta, Indonesia</a></li>
                 <li><a href="#!">Telepon : 0812345678 </a></li>
                 <li><a href="#!">Email : gearent@gmail.com</a></li>
               </ul>

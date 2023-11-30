@@ -2,9 +2,8 @@ import React from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import image from "../../assets/image/image_login.png";
 import styles from "./Login.module.css";
-import { Link } from 'react-router-dom';
 
-function LoginComponent() {
+function LoginAdminComponent() {
     return(
         <section className={`vh-100 ${styles['section']}`}>
             <Container fluid>
@@ -23,8 +22,8 @@ function LoginComponent() {
             
                         <div className={`d-flex align-items-center justify-content-center mt-5 pt-5 ${styles['form__container']}`}>
                             <Form className={styles.form}>
-                                <h3 className={`pb-3 ${styles['title__form']}`}>Selamat Datang di GeaRent</h3>
-                                <p className={styles.description__form}>Nikmati pengalaman outdoor yang seru dan bebas dengan GeaRent</p>
+                                <h3 className={`pb-3 ${styles['title__form']}`}>Login Admin Gearent</h3>
+                                <p className={styles.description__form}>Ini merupakan halaman login khusus admin GeaRent</p>
                 
                                 <Form.Group className="mb-4">
                                     <Form.Control type="email" id="email" className={styles.input} placeholder="Email address" />
@@ -35,9 +34,7 @@ function LoginComponent() {
                                 </Form.Group>
                 
                                 <div className="pt-1 mb-4">
-                                    <Link to="/dashboard">
-                                        <Button type="button" className={`btn-get-started ${styles['btn-get-started']}`}>Masuk</Button>
-                                    </Link>
+                                    <Button type="button" className={`btn-get-started ${styles['btn-get-started']}`}>Masuk</Button>
                                 </div>
                             </Form>
                         </div>
@@ -48,4 +45,4 @@ function LoginComponent() {
     );
 }
 
-export default LoginComponent;
+export default LoginAdminComponent;

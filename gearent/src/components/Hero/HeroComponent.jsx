@@ -11,7 +11,7 @@ function HeroComponent() {
                 <Row className="gy-5" data-aos="fade-in">
                     <Col lg={6} order={2} className="order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
                         <h2>Camping Jadi Simple dan Nyaman</h2>
-                        <p>
+                        <p className={styles.hero__description}>
                             Nikmati pengalaman outdoor yang seru dan bebas dengan GeaRent. Kami berkomitmen untuk memberikan
                             pelayanan terbaik kepada pelanggan kami, supaya Anda dapat menikmati pengalaman outdoor yang tak terlupakan.
                         </p>
