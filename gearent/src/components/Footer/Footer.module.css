@@ -30,6 +30,7 @@
 }
 
 .footer__list a:hover{
+    color: #ffffff;
     font-weight: bold;
     transition: all 0.2s ease-in-out;
 }

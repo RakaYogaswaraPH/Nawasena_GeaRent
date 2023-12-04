@@ -1,0 +1,16 @@
+.card{
+    border-radius: 5px;
+    box-shadow:  3px 2px 5px rgba(0,0,0,0.2);
+    overflow: auto;
+}
+
+.title{
+    color: #8e3200;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.table__container{
+    table-layout: auto;
+}

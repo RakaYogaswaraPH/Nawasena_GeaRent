@@ -1,0 +1,20 @@
+.card{
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow:  3px 2px 5px rgba(0,0,0,0.2);
+}
+
+.title{
+    color: #8e3200;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.welcome__description{
+    color: #8e3200;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 10px 20px;
+    text-align: center;
+}

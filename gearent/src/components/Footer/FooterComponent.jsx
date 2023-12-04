@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "./Footer.module.css";
 import image from "../../assets/image/playstore.png";
+import Nav from 'react-bootstrap/Nav';
 
 function FooterComponent() {
     return(
@@ -21,11 +22,24 @@ function FooterComponent() {
             <div className="col-md-3 mb-md-0 mb-3">
               <h5 className={styles.footer__subtitle}>Halaman Navigasi</h5>
               <ul className={`list-unstyled ${styles['footer__list']}`}>
-                <li><a href="#hero">Beranda</a></li>
-                <li><a href="#about">Tentang Kami</a></li>
-                <li><a href="#services">Keunggulan</a></li>
-                <li><a href="#toko">Toko</a></li>
-                <li><a href="#contact">Kontak</a></li>
+                <Nav.Link href="/#hero">
+                  <li>Beranda</li>
+                </Nav.Link>
+                <Nav.Link href="/#about">
+                  <li>Tentang Kami</li>
+                </Nav.Link>
+                <Nav.Link href="/#services">
+                  <li>Keunggulan</li>
+                </Nav.Link>
+                <Nav.Link href="/#toko">
+                  <li>Toko</li>
+                </Nav.Link>
+                <Nav.Link href="/#contact">
+                  <li>Kontak</li>
+                </Nav.Link>
+                <Nav.Link href="/barang">
+                  <li>Tambah Barang</li>
+                </Nav.Link>
               </ul>
             </div>
             

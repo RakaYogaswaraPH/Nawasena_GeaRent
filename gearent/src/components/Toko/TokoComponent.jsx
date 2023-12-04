@@ -22,7 +22,7 @@ function TokoComponent() {
                                 </a>
                                 <div className={styles.toko__info}>
                                     <h4 className={styles.name__toko}>
-                                        <a href="portfolio-details.html" className={styles.anchor}>Green Campus Outdoor</a>
+                                        <a href="#" className={styles.anchor}>Green Campus Outdoor</a>
                                     </h4>
                                     <p>Jln. Jabaru I No.13</p>
                                 </div>
@@ -35,7 +35,7 @@ function TokoComponent() {
                                 </a>
                                 <div className={styles.toko__info}>
                                     <h4 className={styles.name__toko}>
-                                        <a href="portfolio-details.html" className={styles.anchor}>Bandakala Rental</a>
+                                        <a href="#" className={styles.anchor}>Bandakala Rental</a>
                                     </h4>
                                     <p>Jln. Raya Kemang Baru Setu</p>
                                 </div>
@@ -48,7 +48,7 @@ function TokoComponent() {
                                 </a>
                                 <div className={styles.toko__info}>
                                     <h4 className={styles.name__toko}>
-                                        <a href="portfolio-details.html" className={styles.anchor}>Cirrus Outdoor</a>
+                                        <a href="#" className={styles.anchor}>Cirrus Outdoor</a>
                                     </h4>
                                     <p>Jln. Babakan Lio No.29</p>
                                 </div>

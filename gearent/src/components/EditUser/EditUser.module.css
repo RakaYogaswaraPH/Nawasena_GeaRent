@@ -1,0 +1,67 @@
+.card{
+    border-radius: 5px;
+    box-shadow:  3px 2px 5px rgba(0,0,0,0.2);
+    overflow: auto;
+}
+
+.title{
+    color: #8e3200;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.table__container{
+    table-layout: auto;
+}
+
+.product{
+    padding: 60px 0 70px 0;
+    background-color: #ffffff;
+}
+
+.form .form__group{
+    padding-bottom: 8px;
+}
+
+.form .input, .form .textarea{
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.form .input[type=text], .form .input[type=email],
+.form .textarea{
+    padding: 12px 15px;
+}
+
+.form .input[type=text]:focus, .form .input[type=email]:focus,
+.form .textarea:focus{
+    border-color: #8E3200;
+}
+
+.form .textarea{
+    padding: 10px 12px;
+}
+
+.container__button{
+    padding-top: 30px;
+}
+
+.form .button[type="submit"]{
+    background: #8E3200;
+    border: 0;
+    padding: 14px 45px;
+    color: #ffffff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.form .button[type="submit"]:hover{
+    background: #FFFADA;
+    color: #8E3200;
+}
+
+.label{
+    color: #8E3200;
+}

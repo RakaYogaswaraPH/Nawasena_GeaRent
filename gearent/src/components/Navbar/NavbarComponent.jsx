@@ -18,11 +18,12 @@ function NavbarComponent() {
             className="ms-auto me-2 my-4 my-lg-0"
             style={{ maxHeight: '190px'}}
           >
-            <Nav.Link href="#hero" className={`text-light me-2 ${styles['nav-link-hover']}`}>Beranda</Nav.Link>
-            <Nav.Link href="#about" className={`text-light me-2 ${styles['nav-link-hover']}`}>Tentang Kami</Nav.Link>
-            <Nav.Link href="#services" className={`text-light me-2 ${styles['nav-link-hover']}`}>Keunggulan</Nav.Link>
-            <Nav.Link href="#toko" className={`text-light me-2 ${styles['nav-link-hover']}`}>Toko</Nav.Link>
-            <Nav.Link href="#contact" className={`text-light me-2 ${styles['nav-link-hover']}`}>Kontak</Nav.Link>
+            <Nav.Link href="/#hero" className={`text-light me-2 ${styles['nav-link-hover']}`}>Beranda</Nav.Link>
+            <Nav.Link href="/#about" className={`text-light me-2 ${styles['nav-link-hover']}`}>Tentang Kami</Nav.Link>
+            <Nav.Link href="/#services" className={`text-light me-2 ${styles['nav-link-hover']}`}>Keunggulan</Nav.Link>
+            <Nav.Link href="/#toko" className={`text-light me-2 ${styles['nav-link-hover']}`}>Toko</Nav.Link>
+            <Nav.Link href="/#contact" className={`text-light me-2 ${styles['nav-link-hover']}`}>Kontak</Nav.Link>
+            <Nav.Link href="/barang" className={`text-light me-2 ${styles['nav-link-hover']}`}>Tambah Barang</Nav.Link>
           </Nav>
           <div>
             <Link to="/login">
