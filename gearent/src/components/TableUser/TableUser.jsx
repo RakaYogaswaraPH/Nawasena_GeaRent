@@ -43,7 +43,9 @@ function TableUser() {
                             <td>2023-12-03 20:43:22</td>
                             <td>2023-12-03 20:43:22</td>
                             <td>
-                                <Button variant="success" className="me-2 mb-2" >Edit</Button>
+                                <Link to="/dashboard/users/edit-user/">
+                                    <Button variant="success" className="me-2 mb-2" >Edit</Button>
+                                </Link>
                                 <Button variant="danger" className="me-1 mb-2" >Delete</Button>
                             </td>
                         </tr>
@@ -55,7 +57,9 @@ function TableUser() {
                             <td>2023-12-01 20:43:22</td>
                             <td>2023-12-03 21:40:12</td>
                             <td>
-                                <Button variant="success" className="me-2 mb-2" >Edit</Button>
+                                <Link to="/dashboard/users/edit-user/">
+                                    <Button variant="success" className="me-2 mb-2" >Edit</Button>
+                                </Link>
                                 <Button variant="danger" className="me-1 mb-2" >Delete</Button>
                             </td>
                         </tr>
@@ -67,7 +71,9 @@ function TableUser() {
                             <td>2023-12-01 20:43:22</td>
                             <td>2023-12-03 21:40:12</td>
                             <td>
-                                <Button variant="success" className="me-2 mb-2" >Edit</Button>
+                                <Link to="/dashboard/users/edit-user/">
+                                    <Button variant="success" className="me-2 mb-2" >Edit</Button>
+                                </Link>
                                 <Button variant="danger" className="me-1 mb-2" >Delete</Button>
                             </td>
                         </tr>
@@ -79,7 +85,9 @@ function TableUser() {
                             <td>2023-12-01 10:43:00</td>
                             <td>2023-12-03 19:40:35</td>
                             <td>
-                                <Button variant="success" className="me-2 mb-2" >Edit</Button>
+                                <Link to="/dashboard/users/edit-user/">
+                                    <Button variant="success" className="me-2 mb-2" >Edit</Button>
+                                </Link>
                                 <Button variant="danger" className="me-1 mb-2" >Delete</Button>
                             </td>
                         </tr>
