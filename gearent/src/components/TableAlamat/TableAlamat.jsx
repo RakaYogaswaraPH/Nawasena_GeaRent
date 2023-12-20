@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from "./TableAlamat.module.css";
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 function TableAlamat() {
+
+    const [data, setData] = useState([]);
+    useEffect(()=> {
+        fetch('http://localhost:9987/api/admin/alamat')
+        .then(res => res.json())
+        .then(data => setData(data.data))
+        .catch(err => console.log(err))
+    }, [])
+
     return(
         <div className={`p-5 ${styles['container']}`}>
             <div className={`p-4 ${styles['card']}`}>
@@ -21,48 +30,22 @@ function TableAlamat() {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Jln. Raya Kemang Baru Setu</td>
-                            <td>Bogor</td>
-                            <td>Jawa Barat</td>
-                            <td>13453</td>
-                            <td>Indonesia</td>
-                            <td>
-                                <Link to="/dashboard/alamat/edit-alamat/" >
-                                    <Button variant="success" className="me-2 mb-2" >Edit</Button>
-                                </Link>
-                                <Button variant="danger" className="me-1 mb-2" >Delete</Button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Jln. Jend. Sudirman No.25</td>
-                            <td>Bogor</td>
-                            <td>Jawa Barat</td>
-                            <td>16234</td>
-                            <td>Indonesia</td>
-                            <td>
-                                <Link to="/dashboard/alamat/edit-alamat/" >
-                                    <Button variant="success" className="me-2 mb-2" >Edit</Button>
-                                </Link>
-                                <Button variant="danger" className="me-1 mb-2" >Delete</Button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Jln. Babakan Lio No.29</td>
-                            <td>Bogor</td>
-                            <td>Jawa Barat</td>
-                            <td>16242</td>
-                            <td>Indonesia</td>
-                            <td>
-                                <Link to="/dashboard/alamat/edit-alamat/" >
-                                    <Button variant="success" className="me-2 mb-2" >Edit</Button>
-                                </Link>
-                                <Button variant="danger" className="me-1 mb-2" >Delete</Button>
-                            </td>
-                        </tr>
+                        {data.map((data, i)=>(
+                            <tr key={i}>
+                                <td>{data.id}</td>
+                                <td>{data.jalan}</td>
+                                <td>{data.kota}</td>
+                                <td>{data.provinsi}</td>
+                                <td>{data.kode_pos}</td>
+                                <td>{data.negara}</td>
+                                <td>
+                                    <Link to="/dashboard/alamat/edit-alamat/" >
+                                        <Button variant="success" className="me-2 mb-2" >Edit</Button>
+                                    </Link>
+                                    <Button variant="danger" className="me-1 mb-2" >Delete</Button>
+                                </td>
+                            </tr>
+                        ))}
                     </tbody>
                 </table>
                 <Link to="/dashboard/alamat/tambah-alamat/">

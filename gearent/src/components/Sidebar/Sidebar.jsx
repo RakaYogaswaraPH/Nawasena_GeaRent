@@ -18,7 +18,7 @@ function Sidebar() {
                 <ul className={`nav nav-pills flex-column mt-3 ${styles['sidebar__container']}`}>
                     <li className="nav-item p-3">
                         <a href="" className="p-1 text-decoration-none">
-                            <img src={imageUser} alt="user" className={`fs-4 me-4 ${styles['image']}`}/>
+                            {/* <img src={imageUser} alt="user" className={`fs-4 me-4 ${styles['image']}`}/> */}
                             <span className="fs-5 text-white"><strong>Admin</strong></span>
                         </a>
                     </li>

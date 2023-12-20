@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from "./TableGambar.module.css";
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 function TableGambar() {
+
+    const [data, setData] = useState([]);
+    useEffect(()=> {
+        fetch('http://localhost:9987/api/admin/gambar')
+        .then(res => res.json())
+        .then(data => setData(data.data))
+        .catch(err => console.log(err))
+    }, [])
+
     return(
         <div className={`p-5 ${styles['container']}`}>
             <div className={`p-4 ${styles['card']}`}>
@@ -18,39 +27,19 @@ function TableGambar() {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td scope='row'>barang-1.jpg</td>
-                            <td>6</td>
-                            <td>
-                                <Link to="/dashboard/gambar/edit-gambar/">
-                                    <Button variant="success" className="me-2 mb-2" >Edit</Button>
-                                </Link>
-                                <Button variant="danger" className="me-1 mb-2" >Delete</Button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td scope='row'>barang-2.jpg</td>
-                            <td>4</td>
-                            <td>
-                                <Link to="/dashboard/gambar/edit-gambar/">
-                                    <Button variant="success" className="me-2 mb-2" >Edit</Button>
-                                </Link>
-                                <Button variant="danger" className="me-1 mb-2" >Delete</Button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td scope='row'>barang-3.jpg</td>
-                            <td>2</td>
-                            <td>
-                                <Link to="/dashboard/gambar/edit-gambar/">
-                                    <Button variant="success" className="me-2 mb-2" >Edit</Button>
-                                </Link>
-                                <Button variant="danger" className="me-1 mb-2" >Delete</Button>
-                            </td>
-                        </tr>
+                        {data.map((data, i)=>(
+                            <tr key={i}>
+                                <td>{data.id}</td>
+                                <td>{data.gambar}</td>
+                                <td>{data.kode_barang_id}</td>
+                                <td>
+                                    <Link to="/dashboard/gambar/edit-gambar/">
+                                        <Button variant="success" className="me-2 mb-2" >Edit</Button>
+                                    </Link>
+                                    <Button variant="danger" className="me-1 mb-2" >Delete</Button>
+                                </td>
+                            </tr>
+                        ))}
                     </tbody>
                 </table>
                 <Link to="/dashboard/gambar/tambah-gambar/">

@@ -8,6 +8,12 @@
     text-decoration: none;
 }
 
+.logo{
+    height: 80px;
+    width: auto;
+    padding: 5px 5px;
+}
+
 .navbar__title{
     color: #ffffff;
 }

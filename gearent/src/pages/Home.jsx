@@ -11,7 +11,9 @@ import Testimonials from "../components/Testimonials/TestimonialsComponent";
 import TokoComponent from "../components/Toko/TokoComponent";
 import VideoComponent from "../components/VideoShowcase/VideoComponent";
 
+
 function Home(){
+
     return(
         <div>
             <NavbarComponent />

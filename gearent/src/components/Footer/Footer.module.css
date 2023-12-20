@@ -6,6 +6,11 @@
     text-decoration: none;
 }
 
+.logo{
+    height: 80px;
+    width: auto;
+}
+
 .footer__title{
     color: #ffffff;
 }
@@ -15,6 +20,7 @@
 }
 
 .footer__description{
+    padding-top: 10px;
     color:  #ffffff;
 }
 

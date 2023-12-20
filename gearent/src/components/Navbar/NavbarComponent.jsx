@@ -4,13 +4,15 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import styles from "./Navbar.module.css";
 import { Link } from 'react-router-dom';
+import imageLogo from "../../assets/image/logo-gearent.png";
 
 function NavbarComponent() {
   return(
     <Navbar expand="lg" className={styles.navbar}>
-      <Container className="d-flex p-2">
+      <Container className="d-flex">
         <a href="#" className={styles.nav__anchor}>
-          <h3 className={styles.navbar__title}>GeaRent<span className={styles.navbar__dot}>.</span></h3>
+          <img src={imageLogo} alt="logo" className={styles.logo} />
+          {/* <h3 className={styles.navbar__title}>GeaRent<span className={styles.navbar__dot}>.</span></h3> */}
         </a>
         <Navbar.Toggle variant="light" aria-controls="navbarScroll" style={{ borderColor: 'white', backgroundColor: 'white',  boxShadow: '0 0 0 #ffffff'}}/>
         <Navbar.Collapse id="navbarScroll">

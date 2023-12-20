@@ -2,6 +2,7 @@ import React from 'react';
 import styles from "./Footer.module.css";
 import image from "../../assets/image/playstore.png";
 import Nav from 'react-bootstrap/Nav';
+import imageLogo from "../../assets/image/logo-gearent.png";
 
 function FooterComponent() {
     return(
@@ -10,7 +11,8 @@ function FooterComponent() {
           <div className="row">
             <div className="col-lg-4 mt-md-0 mt-3">
               <a href="#" className={styles.footer__anchor}>
-                <h3 className={styles.footer__title}>GeaRent<span className={styles.footer__dot}>.</span></h3>
+                <img src={imageLogo} alt="logo" className={styles.logo} />
+                {/* <h3 className={styles.footer__title}>GeaRent<span className={styles.footer__dot}>.</span></h3> */}
               </a>
               <p className={styles.footer__description}>Nikmati pengalaman outdoor yang seru dan bebas dengan GeaRent.</p>
               <a href="#">
